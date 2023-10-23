@@ -1,6 +1,6 @@
 ### PROVIDER
 provider "google" {
-  project = "advancedterraform" #replace this with your project-id
+  project = "advanced-terraform-402901" #replace this with your project-id
   region  = "us-central1"
   zone    = "us-central1-a"
 }
@@ -26,7 +26,7 @@ resource "google_compute_firewall" "default" {
   allow {
     protocol = "icmp"
   }
-
+ 
   allow {
     protocol = "tcp"
     ports    = ["80", "8080", "1000-2000", "22"]
